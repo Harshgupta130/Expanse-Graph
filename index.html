@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/c01066b9d9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section id="heading">
+
+    <h1><i class="fas fa-rupee-sign"></i> Smart Saving</h1>
+  </section>
+
+  <section id="features">
+    <button class="menu-btn" onclick="myFunction()">Menu <i class="fas fa-plus-circle menu-plus"></i></button>
+    <div class="menu">
+
+      <ul>
+        <li><a href="#details">Add Expense And Income</a></li>
+        <li><a href="#chart">View Expense Vs Income Curve</a></li>
+        <li><a href="#features">Features</a>
+      </ul>
+    </div>
+    <h1>Features</h1>
+    <div class="features-div">
+      <h1><i class="fas fa-piggy-bank feat-fab"></i></h1>
+      <h2>Save Smartly</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <!-- <i class="fas fa-clipboard feat-fab"></i> -->
+    <div class="features-div">
+      <h1><i class="fas fa-clipboard feat-fab"></i></h1>
+      <h2>Easy Access</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <div class="features-div">
+      <h1><i class="fas fa-chart-line feat-fab"></i></h1>
+      <h2>Better Analysis</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="form-div">
+
+
+      <form class="form" action="index.html" method="post">
+        <fieldset>
+
+          <legend>
+            <h1>Enter Details</h1>
+          </legend>
+          <label for="Date">Date</label><br>
+          <input class="date" type="date" name="date" value=""><br>
+          <label for="Expense">Expense(in thousand)</label><br>
+          <input class="expense" type="number" name="expenses" value="enter in thousand"><br>
+          <label for="Income">Income(in thousand)</label><br>
+          <input class="income" type="number" name="income" value=""><br>
+          <input class="check" type="checkbox" name="" value="" onclick="myFunction2()">
+          <label for="special expense">Any special expenses<i class="fas fa-info-circle info-icon" onclick="displayInfo()"></i></label><br>
+          <div class="info">
+            <p>The expenses which are returnable / investment.</p>
+          </div>
+          <input class="special" type="number" name="expenses" value="enter in thousand"><br>
+          <input type="button" onclick="drawChart()" value="Submit">
+        </fieldset>
+        <button class="chart-btn" type="button" name="button" onclick="toRespond()">Click Here To Get Graph</button>
+      </form>
+    </div>
+  </section>
+  <section id="chart">
+    <h1>Savings/Expenses Analysis</h1>
+    <div id="curve_chart">
+
+    </div>
+    <h2 class="total-savings">Total Savings:</h2>
+    <h2 class="total-expenses">Total Expenses:</h2>
+  </section>
+  <section id="contact">
+    <h1>Mentor <i class="fas fa-chalkboard-teacher"></i></h1>
+    <div class="d3 profile-main"><img class="profile-img" src="g1.jfif">
+      <xyz>
+        <h2>Nandini</h2>
+        <h2>23493</h2>
+        <h3><a href="https://www.linkedin.com/in/harsh-gupta-130031/"><i class="fab fa-linkedin"></i></a></h3>
+      </xyz>
+    </div><br>
+    <h1 class="contact-heading">Developers  <i class="fas fa-code"></i></h1>
+    <div class="d3"><img class="profile-img" src="b.jfif">
+      <xyz>
+        <h2>Sachin Verma</h2>
+        <h3>11902043</h3>
+        <h3>RK19TSB67</h3>
+        <h3><a href="https://www.linkedin.com/in/sachin-verma-136a4b192/"><i class="fab fa-linkedin"></i></a></h3>
+      </xyz>
+    </div>
+
+    <div class="d3"><img class="profile-img" src="h.jfif">
+      <xyz>
+        <h2>Harsh gupta</h2>
+        <h3>11902513</h3>
+        <h3>RK19TSB66</h3>
+        <h3><a href="https://www.linkedin.com/in/harsh-gupta-130031/"><i class="fab fa-linkedin"></i></a></h3>
+      </xyz>
+    </div><br>
+    <div class="d3"><img class="profile-img" src="aka.png">
+      <xyz>
+        <h2>Akash Chandra</h2>
+        <h3>11904396</h3>
+        <h3>RK19TSB65</h3>
+        <h3><a href="https://www.linkedin.com/in/akash-kashyap-169591158/"><i class="fab fa-linkedin"></i></a></h3>
+      </xyz>
+    </div>
+    <div class="d3"><img class="profile-img" src="g2.png">
+      <xyz>
+        <h2>Sahana </h2>
+        <h3>11918763</h3>
+        <h3>RK19TSB64</h3>
+        <h3><a href="https://www.linkedin.com/in/sahanaravikumar/"><i class="fab fa-linkedin"></i></a></h3>
+      </xyz>
+    </div><br>
+  </section>
+  <section id="footer">
+    <div class="call">
+      <a href="#heading"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+
+    <p>Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
